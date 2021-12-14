@@ -1,0 +1,18 @@
+UseReducer
+=> useReducer is a hook that is used for state management
+=> useReducer is an alternative to useState
+=> Difference - useState is built using useReducer
+    => useReducer is more premittive hook compared to useState
+
+Reduce
+# reduce in JavaScript
+# array.reduce(reducer, initialValue)
+# singleValue = reducer(accumulator, itemValue)
+# Reduce method returns a single itemValue
+vs
+useReducer
+# useReducer in React
+# useReducer(reducer, initialState)
+# newState = reducer(currentState, action)
+# useReducer returns a pair of values. [newState, dispatch]
+
