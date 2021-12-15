@@ -16,3 +16,21 @@ useReducer
 # newState = reducer(currentState, action)
 # useReducer returns a pair of values. [newState, dispatch]
 
+If both useState and useReducer is for state management when should we use which one?
+ => useState
+ # Type of State : Number, String, Boolean
+ # Number of State Transitions : one or two
+ # Related State Transitions? : No
+ # Business Logic : No Business Logic
+ # Local vs Global : Local
+
+ vs
+ 
+ => useReducer
+ # Type of State : oject or array
+ # Number of State Transitions : Too Many
+ # Related State Transitions? : Yes
+ # Business Logic : Complex Business Logic
+ # Local vs Global : Global
+
+

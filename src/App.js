@@ -18,6 +18,8 @@ import ReducerCounterOne from './components/ReducerCounterOne';
 import ReducerCounterThree from './components/ReducerCounterThree';
 import ReducerCounterTwo from './components/ReducerCounterTwo';
 import { UserProvider, ChannelProvider } from './components/UserContext';
+import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
 
 
 // <-------------------- Combining useReducer with UseContext ----------------------------->
@@ -46,6 +48,8 @@ function App() {
 
   return (
     <div className="App">
+      <DataFetchingTwo />
+      {/* <DataFetchingOne /> */}
       {/* <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
         Count - {count}
         <ReducerComponentA />
