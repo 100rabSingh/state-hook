@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useReducer } from 'react';
 import ContextComponentC from './components/ContextComponentC';
 import EffectCounter from './components/EffectCounter';
 import EffectCounterTwo from './components/EffectCounterTwo';
@@ -10,15 +11,49 @@ import HookCounterFour from './components/HookCounterFour';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterTwo from './components/HookCounterTwo';
 import IntervalHookCounter from './components/IntervalHookCounter';
+import ReducerComponentA from './components/ReducerComponentA';
+import ReducerComponentB from './components/ReducerComponentB';
+import ReducerComponentC from './components/ReducerComponentC';
 import ReducerCounterOne from './components/ReducerCounterOne';
 import ReducerCounterThree from './components/ReducerCounterThree';
 import ReducerCounterTwo from './components/ReducerCounterTwo';
 import { UserProvider, ChannelProvider } from './components/UserContext';
 
+
+// <-------------------- Combining useReducer with UseContext ----------------------------->
+export const CountContext = React.createContext()
+
+// const initialState = 0
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case 'increment':
+//       return state + 1
+//     case 'decrement':
+//       return state - 1
+//     case 'reset':
+//       return initialState
+//     default:
+//       return state
+//   }
+// }
+
+// <-------------------- Combining useReducer with UseContext ----------------------------->
+
 function App() {
+  // <-------------------- Combining useReducer with UseContext ----------------------------->
+  // const [count, dispatch] = useReducer(reducer, initialState)
+  // <-------------------- Combining useReducer with UseContext ----------------------------->
+
   return (
     <div className="App">
-      <ReducerCounterThree />
+      {/* <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+        Count - {count}
+        <ReducerComponentA />
+        <ReducerComponentB />
+        <ReducerComponentC />
+      </CountContext.Provider > */}
+
+      {/* <ReducerCounterThree /> */}
       {/* <ReducerCounterTwo /> */}
       {/* <ReducerCounterOne /> */}
       {/* <UserProvider value='100rab'>
@@ -37,7 +72,7 @@ function App() {
       {/* <HookCounterThree /> */}
       {/* <HookCounterTwo /> */}
       {/* <HookCounter /> */}
-    </div>
+    </div >
   );
 }
 
