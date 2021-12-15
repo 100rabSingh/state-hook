@@ -11,13 +11,16 @@ import HookCounterThree from './components/HookCounterThree';
 import HookCounterTwo from './components/HookCounterTwo';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import ReducerCounterOne from './components/ReducerCounterOne';
+import ReducerCounterThree from './components/ReducerCounterThree';
+import ReducerCounterTwo from './components/ReducerCounterTwo';
 import { UserProvider, ChannelProvider } from './components/UserContext';
 
 function App() {
   return (
     <div className="App">
-
-      <ReducerCounterOne />
+      <ReducerCounterThree />
+      {/* <ReducerCounterTwo /> */}
+      {/* <ReducerCounterOne /> */}
       {/* <UserProvider value='100rab'>
         <ChannelProvider value='ReactPractice'>
           <ContextComponentC />
