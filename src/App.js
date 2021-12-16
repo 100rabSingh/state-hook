@@ -25,6 +25,9 @@ import MemoCounter from './components/MemoCounter';
 import RefFocusInput from './components/RefFocusInput';
 import RefClassTimer from './components/RefClassTimer';
 import RefHookTimer from './components/RefHookTimer';
+import CustomCounterOne from './components/CustomCounterOne';
+import CustomCounterTwo from './components/CustomCounterTwo';
+import CustomUserForm from './components/CustomUserForm';
 
 
 // <-------------------- Combining useReducer with UseContext ----------------------------->
@@ -53,8 +56,11 @@ function App() {
 
   return (
     <div className="App">
-      <RefHookTimer />
-      <RefClassTimer />
+      <CustomUserForm />
+      {/* <CustomCounterOne />
+      <CustomCounterTwo /> */}
+      {/* <RefHookTimer /> */}
+      {/* <RefClassTimer /> */}
       {/* <RefFocusInput /> */}
       {/* <MemoCounter /> */}
       {/* <CallbackParentComponent /> */}
