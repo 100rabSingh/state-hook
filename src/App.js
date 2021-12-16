@@ -21,6 +21,7 @@ import { UserProvider, ChannelProvider } from './components/UserContext';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
 import CallbackParentComponent from './components/CallbackParentComponent';
+import MemoCounter from './components/MemoCounter';
 
 
 // <-------------------- Combining useReducer with UseContext ----------------------------->
@@ -49,7 +50,8 @@ function App() {
 
   return (
     <div className="App">
-      <CallbackParentComponent />
+      <MemoCounter />
+      {/* <CallbackParentComponent /> */}
       {/* <DataFetchingTwo /> */}
       {/* <DataFetchingOne /> */}
       {/* <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
