@@ -22,6 +22,9 @@ import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
 import CallbackParentComponent from './components/CallbackParentComponent';
 import MemoCounter from './components/MemoCounter';
+import RefFocusInput from './components/RefFocusInput';
+import RefClassTimer from './components/RefClassTimer';
+import RefHookTimer from './components/RefHookTimer';
 
 
 // <-------------------- Combining useReducer with UseContext ----------------------------->
@@ -50,7 +53,10 @@ function App() {
 
   return (
     <div className="App">
-      <MemoCounter />
+      <RefHookTimer />
+      <RefClassTimer />
+      {/* <RefFocusInput /> */}
+      {/* <MemoCounter /> */}
       {/* <CallbackParentComponent /> */}
       {/* <DataFetchingTwo /> */}
       {/* <DataFetchingOne /> */}
