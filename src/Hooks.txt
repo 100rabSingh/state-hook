@@ -18,7 +18,7 @@ Why Hooks?
 	=> There is a need to share stateful logic in a better way
 
  - Reason set 3
-	=> create components for complex scenarios such as data fetching and subscribing to 		   events.
+	=> create components for complex scenarios such as data fetching and subscribing to events.
 	=> Related code is not organized in one place but scattered into different lifecycle
 	   methods
 	=> Ex: Data Fetching - In componentDidMount and componentDidUpdate
